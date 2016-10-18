@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="type_value_array">
+        <item>""</item>
+        <item>new/</item>
+        <item>controversial/</item>
+        <item>top/</item>
+        <item>saved/</item>
+    </string-array>
+    <string-array name="date_value_array">
+        <item>hour</item>
+        <item>day</item>
+        <item>week</item>
+        <item>month</item>
+        <item>year</item>
+        <item>all</item>
+    </string-array>
+    <string-array name="new_value_array">
+        <item>new</item>
+        <item>rising</item>
+    </string-array>
+
+    <!-- overview -->
+    <string-array name="overview_tab_value_array">
+        <item>""</item>
+        <item>comments/</item>
+        <item>submitted</item>
+    </string-array>
+    <string-array name="overview_sort_value_array">
+        <item>new</item>
+        <item>hot</item>
+        <item>top</item>
+        <item>controversial</item>
+    </string-array>
+
+    <!-- Message -->
+    <string-array name="message_value_array">
+        <item>messages</item>
+        <item>inbox</item>
+        <item>comments</item>
+        <item>selfreply</item>
+        <item>sent</item>
+        <item>moderator/inbox</item>
+        <item>moderator/unread</item>
+    </string-array>
+    <string-array name="comment_count_value_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+    
+    <string-array name="clear_disk_rate_value_array">
+        <item>0</item>
+        <item>2</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>30</item>
+        <item>36</item>
+        <item>42</item>
+        <item>48</item>
+    </string-array>
+
+</resources>

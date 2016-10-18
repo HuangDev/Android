@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_widget_white"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <!-- Title show the icon and subreddit -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="2dip" >
+
+                <TextView
+                    android:id="@+id/widget_subreddit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#1abcff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/widget_subreddit_kind"
+                    style="@style/blue_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_small_arrow_left" />
+
+                <TextView
+                    android:id="@+id/widget_count"
+                    style="@style/blue_score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_small_arrow_right" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/widget_refresh"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_refresh" />
+
+            <ImageView
+                android:id="@+id/widget_setting"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_setting_state" />
+
+            <LinearLayout
+                android:layout_width="96dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/navigation_left"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_navigation_left_state" />
+
+                <ImageView
+                    android:id="@+id/navigation_right"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_navigation_right_state" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#00b4ff" >
+        </LinearLayout>
+        <!-- Vote and title and comments -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="60dip"
+                android:orientation="horizontal"
+                android:padding="3dip" >
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/blue_subreddit_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <!-- comment style -->
+
+                    <LinearLayout
+                        android:id="@+id/subreddit_comment"
+                        style="@style/comment_linear" >
+
+                        <ImageView style="@style/blue_comment_pic" />
+
+                        <TextView
+                            android:id="@+id/subreddit_comment_count"
+                            style="@style/blue_comment_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/subreddit_info_nsfw"
+                    style="@style/nsfw" />
+
+                <TextView
+                    android:id="@+id/subreddit_info_time"
+                    style="@style/blue_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dip" />
+
+                <TextView
+                    android:id="@+id/subreddit_info_author"
+                    style="@style/blue_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/subreddit_info_score"
+                    style="@style/blue_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/subreddit_info_subreddit"
+                    style="@style/blue_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

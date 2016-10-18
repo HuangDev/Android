@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme" />
+
+    <style name="AppTheme.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+    <style name="PhotoGridLayout">
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:listSelector">@null</item>
+    </style>
+
+    <!-- no background, no title -->
+    <style name="TransparentDialogTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <!-- white background, custom animate -->
+    <style name="WhiteDialogTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@drawable/dialog_bg_white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="windowMinWidthMajor">@dimen/abs__dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/abs__dialog_min_width_minor</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.Sherlock.Light</item>
+    </style>
+
+    <style name="TransparentDialogTheme.NoDim">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="type_text_style">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_subscribe_type_state</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Redditor Activity -->
+    <style name="redditor_linear">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="redditor_title_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="redditor_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/redditor_divider_color</item>
+    </style>
+
+    <style name="redditor_divider_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#00baff</item>
+    </style>
+
+    <style name="redditor_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">3dip</item>
+        <item name="android:textColor">#33B5E5</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="redditor_subtitle" parent="redditor_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#4a4a4a</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="redditor_button_text" parent="redditor_title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="redditor_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/redditor_value_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="submit_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#888888</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">8dip</item>
+    </style>
+
+    <!-- Comment Picture Style -->
+    <style name="comment_linear">
+        <item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    
+    <style name="comment_count">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="common_label">
+        <item name="android:textColor">#267de0</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="spinner_blue">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">36dip</item>
+        <item name="android:layout_gravity">center|center_vertical|center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_spinner_state</item>
+        <item name="android:textColor">#00b5f7</item>
+    </style>
+
+    <style name="spinner_promote">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:textColor">#00b5f7</item>
+    </style>
+
+    <!-- Dialog me -->
+
+</resources>

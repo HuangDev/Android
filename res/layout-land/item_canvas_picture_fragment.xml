@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color_ref"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.softgame.reddit.view.ScaleImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/picture_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:background="?image_info_background_ref"
+        android:orientation="vertical"
+        android:paddingBottom="3dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/title"
+            style="?image_info_title_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:shadowColor="#88FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.1"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/comment_info_nsfw"
+                    style="@style/nsfw" />
+
+                <TextView
+                    android:id="@+id/comment_info_date"
+                    style="?image_info_text_ref" />
+
+                <TextView
+                    android:id="@+id/comment_info_comments_count"
+                    style="?image_info_text_ref"
+                    android:layout_marginLeft="6dip" />
+
+                <TextView
+                    android:id="@+id/comment_info_subreddit"
+                    style="?image_info_label_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vote_score"
+                style="?image_info_score_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="+3"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:background="?image_info_background_ref"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="3dp" >
+
+        <ImageButton
+            android:id="@+id/button_view_picture"
+            style="?image_info_icon_gallery_ref"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_imagebutton_state"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/button_browser"
+            style="?image_info_icon_browser_ref"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_imagebutton_state"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/button_comments"
+            style="?image_info_icon_comment_ref"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_imagebutton_state"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</FrameLayout>

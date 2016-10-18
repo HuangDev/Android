@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout style="@style/blue_dialog_linear" >
+
+        <LinearLayout
+            android:id="@+id/subreddit_vote_up"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                android:id="@+id/vote_up_image"
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/vote_up_grey" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:gravity="center"
+                android:text="@string/pop_up_vote" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/subreddit_vote_down"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                android:id="@+id/vote_down_image"
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/vote_down_grey" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:gravity="center"
+                android:text="@string/pop_down_vote" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/subreddit_save"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_save" />
+
+            <TextView
+                android:id="@+id/subreddit_save_text"
+                style="@style/blue_dialog_text"
+                android:gravity="center"
+                android:text="@string/pop_save" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/subreddit_hide"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_hide" />
+
+            <TextView
+                android:id="@+id/subreddit_hide_text"
+                style="@style/blue_dialog_text"
+                android:gravity="center"
+                android:text="@string/pop_hide" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/subreddit_profile"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_reddit_profile" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:gravity="center"
+                android:text="@string/pop_profile" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp" >
+
+    <LinearLayout style="?subreddit_post_bg_ref" >
+
+        <!-- vote -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/remote_pic"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/loading_pic"
+                android:maxHeight="160dp"
+                android:minHeight="160dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout style="@style/vote_wraper" >
+
+                <LinearLayout
+                    android:id="@+id/vote_up_wraper"
+                    style="@style/vote_up_wraper" >
+
+                    <ImageView
+                        android:id="@+id/vote_up_image"
+                        style="@style/vote_image"
+                        android:src="?vote_up_grey_ref" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vote_score"
+                    style="?score_text_ref" />
+
+                <LinearLayout
+                    android:id="@+id/vote_down_wraper"
+                    style="@style/vote_down_wraper" >
+
+                    <ImageView
+                        android:id="@+id/vote_down_image"
+                        style="@style/vote_image"
+                        android:src="?vote_down_grey_ref" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/subreddit_item_content_height"
+                android:orientation="vertical"
+                android:padding="3dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    style="?subreddit_title_ref" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/subreddit_info_nsfw"
+                        style="@style/nsfw"
+                        android:layout_marginRight="@dimen/info_space" />
+
+                    <TextView
+                        android:id="@+id/subreddit_info_subreddit"
+                        style="?info_color_text_ref" />
+
+                    <TextView
+                        android:id="@+id/subreddit_info_time"
+                        style="?info_text_ref"
+                        android:paddingLeft="@dimen/info_space" />
+
+                    <TextView
+                        android:id="@+id/subreddit_info_comment_count"
+                        style="?info_text_ref"
+                        android:paddingLeft="@dimen/info_space" />
+
+                    <!-- domain -->
+
+                    <TextView
+                        android:id="@+id/subreddit_info_domain"
+                        style="?info_text_ref"
+                        android:paddingLeft="@dimen/info_space" />
+
+                    <!-- HIDE -->
+
+                    <TextView
+                        android:id="@+id/subreddit_info_saved"
+                        style="?label_text_ref"
+                        android:layout_marginLeft="@dimen/info_space"
+                        android:text="@string/label_save" />
+                    <!-- Save -->
+
+                    <TextView
+                        android:id="@+id/subreddit_info_hide"
+                        style="?label_text_ref"
+                        android:layout_marginLeft="@dimen/info_space"
+                        android:text="@string/label_hide" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

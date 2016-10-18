@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/list"
+    style="?subreddit_listview_ref"
+    android:layout_marginLeft="6dip"
+    android:layout_marginRight="6dip"
+    android:divider="@null" >
+
+</ListView>

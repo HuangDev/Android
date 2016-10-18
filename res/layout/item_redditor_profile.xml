@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <!-- Title -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/redditor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="12dp"
+                android:singleLine="true"
+                android:text="RedditET"
+                android:textColor="#00b4ff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/redditor_link_karma"
+                    style="?karma_number_ref" />
+
+                <TextView
+                    style="?karma_text_ref"
+                    android:text="Link Karma" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/redditor_comment_karma"
+                    style="?karma_number_ref" />
+
+                <TextView
+                    style="?karma_text_ref"
+                    android:text="Comment Karma" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/redditor_divider_blue" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/redditor_age"
+            style="?info_text_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:text="profile created  3 years ago"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="42dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="42dp"
+            android:text="Send a message" 
+            android:layout_marginLeft="6dp"
+            />
+    </LinearLayout>
+
+</ScrollView>

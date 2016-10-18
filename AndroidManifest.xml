@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.softgame.reddit"
+    android:versionCode="5"
+    android:versionName="1.06" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar.ForceOverflow" >
+        <activity
+            android:name="com.softgame.reddit.SubRedditFragmentActivity"
+            android:logo="@drawable/icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.softgame.reddit.LoginActivity" />
+        <activity android:name="com.softgame.reddit.SubscribeActivity" />
+        <activity android:name="com.softgame.reddit.RedditorActivity" />
+        <activity android:name="com.softgame.reddit.ResetPasswordActivity" />
+        <activity android:name="com.softgame.reddit.CommentFragmentActivity" />
+        <activity android:name="com.softgame.reddit.SubRedditPortraitActivity" />
+        <activity android:name="com.softgame.reddit.OverviewActivity" />
+        <activity
+            android:name="com.softgame.reddit.OverviewFragmentActivity"
+            android:logo="@drawable/icon_redditor" />
+        <activity android:name="com.softgame.reddit.OverviewCommentActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Comment link -->
+                <data
+                    android:host="www.reddit.com"
+                    android:pathPattern="/r/.*/comments/.*"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.softgame.reddit.LikedActivity" />
+        <activity android:name="com.softgame.reddit.SubmitActivity" />
+        <activity
+            android:name="com.softgame.reddit.MessageActivity"
+            android:logo="@drawable/icon_logo_email" />
+        <activity android:name="com.softgame.reddit.ConversationActivity" />
+        <activity android:name="com.softgame.reddit.SearchSubRedditActivity" />
+        <activity android:name="com.softgame.reddit.SearchSubscribeActivity" />
+        <activity
+            android:name="com.softgame.reddit.SettingActivity"
+            android:logo="@drawable/icon_logo_setting" />
+        <activity android:name="com.softgame.reddit.SettingFragmentActivity" />
+        <activity android:name="com.softgame.reddit.LikedFragmentActivity" >
+        </activity>
+        <activity android:name="com.softgame.reddit.EmailFragmentActivity" >
+        </activity>
+        <activity android:name="com.softgame.reddit.NewMessageListFragmentActivity" >
+        </activity>
+        <activity android:name="com.softgame.reddit.ComposeMessageActivity" />
+        <activity
+            android:name="com.softgame.reddit.SubRedditCanvasActivity"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.softgame.reddit.WebviewActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name="com.softgame.reddit.ImageViewActivity" />
+        <activity android:name="com.softgame.reddit.ImageDetailActivity" />
+        <activity android:name="com.softgame.reddit.InBoxActivity" />
+
+        <!-- remote to seperate -->
+        <service
+            android:name="com.softgame.reddit.service.MessageCheckService"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service
+            android:name="com.softgame.reddit.service.ClearDiskService"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!-- Broadcast Receiver that will process AppWidget updates -->
+        <receiver
+            android:name="com.softgame.reddit.SubredditWidget"
+            android:label="Reddit ET" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_subreddit" />
+        </receiver>
+        <!-- Service to perform web API queries -->
+        <service android:name="com.softgame.reddit.service.SubredditWidget$SubRedditWidgetService" />
+
+        <activity
+            android:name="com.softgame.reddit.WidgetConfigureActivity"
+            android:logo="@drawable/icon_logo_setting" />
+        <activity android:name="com.softgame.reddit.UnreadMessageActivity" />
+        <activity android:name="com.softgame.reddit.ReplyCommentActivity" />
+        <activity
+            android:name="com.softgame.reddit.SubmitLinkTextActivity"
+            android:logo="@drawable/icon_reddit_link" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <!-- Message reboot to check message -->
+
+        <receiver android:name="com.softgame.reddit.MessageCheckInitReceiver" >
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </receiver>
+    </application>
+
+</manifest>

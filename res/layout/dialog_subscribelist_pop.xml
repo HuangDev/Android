@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subscribelist_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <!-- link post -->
+
+    <LinearLayout style="@style/blue_title_bar" >
+
+        <ImageButton
+            android:id="@+id/subreddit_done"
+            style="@style/blue_title_bar_imagebutton"
+            android:src="@drawable/ic_action_done" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subreddit_front"
+            style="@style/blue_title_bar_wraper" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dip"
+                android:background="@drawable/bg_imagebutton_state"
+                android:gravity="center"
+                android:minWidth="52dip"
+                android:text="FRONT"
+                android:textColor="#009dd0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subreddit_all"
+            style="@style/blue_title_bar_wraper" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="-"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/subreddit_me"
+                android:layout_width="wrap_content"
+                android:layout_height="48dip"
+                android:background="@drawable/bg_imagebutton_state"
+                android:gravity="center"
+                android:minWidth="38dip"
+                android:text="ALL"
+                android:textColor="#009dd0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subreddit_mod"
+            style="@style/blue_title_bar_wraper" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="-"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dip"
+                android:background="@drawable/bg_imagebutton_state"
+                android:gravity="center"
+                android:minWidth="38dip"
+                android:text="MOD"
+                android:textColor="#009dd0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subreddit_friend"
+            style="@style/blue_title_bar_wraper" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="-"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dip"
+                android:gravity="center"
+                android:minWidth="52dip"
+                android:text="FRIEND"
+                android:textColor="#009dd0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/subreddit_search"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:background="@drawable/bg_imagebutton_state"
+            android:src="@drawable/ic_action_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#ff2929" >
+    </LinearLayout>
+
+    <com.softgame.reddit.view.CustomTabWidget
+        android:id="@+id/subscribe_tab"
+        style="@style/blue_tab_widget_black"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/subscribe_type_popular"
+            style="@style/blue_tab_widget_white_text"
+            android:text="Popular" />
+
+        <TextView
+            android:id="@+id/subscribe_type_new"
+            style="@style/blue_tab_widget_white_text"
+            android:text="New" />
+
+        <TextView
+            android:id="@+id/subscribe_type_myreddits"
+            style="@style/blue_tab_widget_white_text"
+            android:text="My Reddits" />
+    </com.softgame.reddit.view.CustomTabWidget>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dialog_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

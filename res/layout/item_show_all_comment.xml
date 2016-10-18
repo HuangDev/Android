@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_on_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:gravity="center_vertical" 
+    style="?bg_show_all_comments_ref"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?info_text_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:singleLine="false"
+            android:text="you are viewing a single comment&apos;s thread."
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/subreddit_link"
+            style="?info_text_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="view the rest of the comments " >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        style="?link_arrow_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+
+</LinearLayout>

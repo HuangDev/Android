@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background_color_ref" 
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.softgame.reddit.view.ScaleImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+    <!-- SubReddit -->
+
+    <LinearLayout
+        android:id="@+id/picture_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:background="?image_info_background_ref"
+        android:orientation="vertical"
+        android:paddingBottom="3dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/title"
+            style="?image_info_title_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/comment_info_nsfw"
+                    style="@style/nsfw" />
+
+                <TextView
+                    android:id="@+id/comment_info_date"
+                    style="?image_info_text_ref" />
+
+                <TextView
+                    android:id="@+id/comment_info_comments_count"
+                    style="?image_info_text_ref"
+                    android:layout_marginLeft="6dip" />
+
+                <TextView
+                    android:id="@+id/comment_info_subreddit"
+                    style="?image_info_label_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vote_score"
+                style="?image_info_score_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

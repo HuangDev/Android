@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout style="@style/blue_dialog_linear" >
+
+        <LinearLayout
+            style="@style/blue_dialog_item_wraper"
+            android:layout_height="60dip" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_reddit_profile" />
+
+            <TextView
+                android:id="@+id/me_name"
+                style="?title_text_ref"
+                android:paddingLeft="8dip"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#1abcff" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/me_profile"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_redditor" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:text="@string/dialog_me_profile" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/me_liked"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/vote_up_selected" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:text="@string/dialog_me_liked" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/me_message"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_me_email" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:text="@string/dialog_me_message" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/me_commit"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_reddit_link" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:text="@string/dialog_me_submit" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/me_logout"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_log_out" />
+
+            <TextView
+                style="@style/blue_dialog_text"
+                android:text="@string/dialog_me_logout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

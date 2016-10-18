@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/comment_space"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/comment_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text=" "
+            android:textColor="#00000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+
+            <!-- show the comment infomation -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="26dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp" >
+
+                <!-- author -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/comment_author"
+                        style="?comment_author_ref" />
+                    <!-- time -->
+
+                    <TextView
+                        android:id="@+id/comment_time"
+                        style="?info_text_ref"
+                        android:paddingLeft="3dp" />
+
+                    <ImageView
+                        android:id="@+id/comment_vote"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="6dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/vote_up_selected" />
+                </LinearLayout>
+
+                <!-- point -->
+
+                <TextView
+                    android:id="@+id/comment_score"
+                    style="?score_text_ref"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="6dip" />
+            </LinearLayout>
+
+            <com.softgame.reddit.view.DontPressWithParentTextView
+                android:id="@+id/comment"
+                style="?bg_context_comment_ref"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:paddingLeft="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Button -->
+
+    <LinearLayout
+        android:id="@+id/hidden_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue_indicate_color" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/comment_post_comment"
+                style="@style/blue_drop_item_wraper" >
+
+                <ImageView
+                    style="@style/blue_drop_item_icon"
+                    android:src="@drawable/icon_comment_state" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_vote_up"
+                style="@style/blue_drop_item_wraper" >
+
+                <ImageView
+                    android:id="@+id/comment_vote_up_icon"
+                    style="@style/blue_drop_item_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_vote_down"
+                style="@style/blue_drop_item_wraper" >
+
+                <ImageView
+                    android:id="@+id/comment_vote_down_icon"
+                    style="@style/blue_drop_item_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_delete"
+                style="@style/blue_drop_item_wraper" >
+
+                <ImageView
+                    style="@style/blue_drop_item_icon"
+                    android:src="@drawable/icon_comment_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_edit"
+                style="@style/blue_drop_item_wraper" >
+
+                <ImageView
+                    style="@style/blue_drop_item_icon"
+                    android:src="@drawable/icon_comment_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_profile"
+                style="@style/blue_drop_item_wraper" >
+
+                <ImageView
+                    style="@style/blue_drop_item_icon"
+                    android:src="@drawable/icon_profile" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue_indicate_color" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

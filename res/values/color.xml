@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="vote_down_color">#00aeff</color>
+    <color name="no_color">#00000000</color>
+    <color name="vote_up_color">#ff7800</color>
+    <color name="vote_no_color">#7d7d7d</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Comment -->
+    <!-- info means:submit date,comment number -->
+    <color name="comment_info_text">#7d7d7d</color>
+    <color name="comment_info_author">#0068dc</color>
+    <color name="bg_comment_item_unselected">#ffffff</color>
+    <color name="comment_item_author_normal">#484848</color>
+    <color name="comment_item_author">#669900</color>
+    <color name="comment_item_me">#9933CC</color>
+
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#000000</drawable>
+
+    <!-- Me Activity -->
+    <color name="bg_activity_me">#f7f7f7</color>
+    <color name="redditor_title_color">#00baff</color>
+    <color name="redditor_subtitle_color">#6c6c6c</color>
+    <color name="redditor_divider_color">#e3e3e3</color>
+    <color name="redditor_value_color">#424242</color>
+    <color name="redditor_divider_color_blue">#6de5ff</color>
+
+    <!-- title bar -->
+    <color name="title_bar_text_color">#00d2ff</color>
+    <color name="title_bar_divider_color">#0e4561</color>
+
+    <!-- subscribe color -->
+
+    <drawable name="bg_image">#bebebe</drawable>
+
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="transparent">#00000000</color>
+
+    <drawable name="blue_actionbar_item_selected">#0081e5</drawable>
+
+    <!-- Theme Blue -->
+    <drawable name="blue_score_text_color">#000000</drawable>
+    <drawable name="blue_split_background">#000000</drawable>
+
+    <color name="blue_indicate_color">#00a4e0</color>
+    <color name="blue_bg_image_info">#66ffffff</color>
+
+    <!-- Theme Black -->
+    <drawable name="black_theme_widowbackground">#293134</drawable>
+
+    <color name="black_score_text_color">#8da4a8</color>
+
+    <drawable name="black_listview_hightlight">#9933CC</drawable>
+
+    <color name="black_indicate_color">#b34c00</color>
+    <color name="black_bg_image_info">#66000000</color>
+
+</resources>

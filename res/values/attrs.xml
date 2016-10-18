@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="com.github.ignition.core.widgets.HorizontalPager">
+        <attr name="pageWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="com.github.ignition.core.widgets.HorizontalPagerControl">
+        <attr name="barColor" format="color" />
+        <attr name="highlightColor" format="color" />
+        <attr name="fadeDelay" format="integer" />
+        <attr name="fadeDuration" format="integer" />
+        <attr name="roundRectRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- 90dp  68dp -->
+    <dimen name="image_size_width">48dp</dimen>
+    <dimen name="image_size_height">48dip</dimen>
+    <dimen name="canvas_thumbnail_width">90dip</dimen>
+    <dimen name="canvas_thumbnail_height">68dip</dimen>
+    <dimen name="subscribe_image_width">100dip</dimen>
+    <dimen name="subscribe_image_height">60dip</dimen>
+
+    <drawable name="empty">#ffffff</drawable>
+
+    <!-- Themes -->
+
+
+    <!-- subreddit activity -->
+    <!-- list view style -->
+    <attr name="subreddit_post_bg_ref" format="reference"></attr>
+    <attr name="subreddit_listview_ref" format="reference"></attr>
+    <attr name="subreddit_title_ref" format="reference"></attr>
+    <attr name="comment_text_ref" format="reference"></attr>
+    <!-- TextView Style -->
+    <attr name="info_text_ref" format="reference"></attr>
+    <attr name="info_color_text_ref" format="reference"></attr>
+    <attr name="selfpost_body_ref" format="reference"></attr>
+    <attr name="label_text_ref" format="reference"></attr>
+    <attr name="spinner_promote_ref" format="reference"></attr>
+    <attr name="spinner_ref" format="reference"></attr>
+    <attr name="spinner_dropdown_ref" format="reference"></attr>
+    <attr name="spinner_text_item_ref" format="reference"></attr>
+    <attr name="comment_author_ref" format="reference"></attr>
+    <attr name="comment_body_ref" format="reference"></attr>
+    <attr name="comment_pic_ref" format="reference"></attr>
+
+    <!-- vote up and vote down unselected image -->
+    <attr name="vote_up_grey_ref" format="reference"></attr>
+    <attr name="vote_down_grey_ref" format="reference"></attr>
+    <attr name="score_text_ref" format="reference"></attr>
+    <attr name="menu_comment_icon" format="reference"></attr>
+    <attr name="title_text_ref" format="reference"></attr>
+    <attr name="background_color_ref" format="reference"></attr>
+    <attr name="karma_number_ref" format="reference"></attr>
+    <attr name="karma_text_ref" format="reference"></attr>
+    <attr name="tab_spinner_text_ref" format="reference"></attr>
+    <attr name="horizontal_divider_ref" format="reference"></attr>
+
+    <!-- Message -->
+    <attr name="message_author_ref" format="reference"></attr>
+    <attr name="message_body_ref" format="reference"></attr>
+    <attr name="message_date_ref" formate="reference"></attr>
+    <attr name="message_subject_ref" format="reference"></attr>
+    <attr name="message_arrow_ref" format="reference"></attr>
+
+    <!-- Image View -->
+    <attr name="image_info_title_ref" format="reference"></attr>
+    <attr name="image_info_background_ref" format="reference"></attr>
+    <attr name="image_info_text_ref" format="reference"></attr>
+    <attr name="image_info_label_ref" format="reference"></attr>
+    <attr name="image_info_score_ref" format="reference"></attr>
+    <attr name="image_info_icon_gallery_ref" format="reference"></attr>
+    <attr name="image_info_icon_browser_ref" format="reference"></attr>
+    <attr name="image_info_icon_comment_ref" format="reference"></attr>
+
+    <!-- Context Comment -->
+    <!-- drawable -->
+    <attr name="bg_show_all_comments_ref" format="reference" />
+    <attr name="link_bg_ref" format="reference"></attr>
+    <attr name="link_arrow_ref" format="reference"></attr>
+    <attr name="bg_context_comment_ref" format="reference"></attr>
+
+</resources>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color_ref"
+    android:orientation="vertical"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="6dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?title_text_ref"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="SUBMIT TO REDDIT"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            style="?horizontal_divider_ref"
+            android:layout_marginTop="6dip" >
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/type_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/type_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="link" />
+
+            <RadioButton
+                android:id="@+id/type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:text="text" />
+        </RadioGroup>
+
+        <TextView
+            style="?title_text_ref"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="TITLE"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            style="?horizontal_divider_ref"
+            android:layout_marginTop="6dip" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:hint="Title" >
+        </EditText>
+
+        <!-- URL -->
+
+        <LinearLayout
+            android:id="@+id/input_url_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?title_text_ref"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="6dip"
+                android:text="URL"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                style="?horizontal_divider_ref"
+                android:layout_marginTop="6dip" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/input_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:hint="Url" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Option Text -->
+
+        <LinearLayout
+            android:id="@+id/input_text_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="?title_text_ref"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="6dip"
+                android:text="TEXT(OPTIONAL)"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                style="?horizontal_divider_ref"
+                android:layout_marginTop="6dip" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:hint="Text" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            style="?title_text_ref"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="Choose A SUBREDDIT"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            style="?horizontal_divider_ref"
+            android:layout_marginTop="6dip" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/input_subreddit"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:hint="Subreddit" >
+            </EditText>
+
+            <Button
+                android:id="@+id/pick_subreddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Pick subreddits" 
+                android:minHeight="42dp"
+                />
+        </LinearLayout>
+
+        <!-- Link captcha linear -->
+
+        <LinearLayout
+            android:id="@+id/link_captcha_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="?title_text_ref"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="6dip"
+                android:text="CAPTCHA"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                style="?horizontal_divider_ref"
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="6dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom" >
+
+                <EditText
+                    android:id="@+id/link_input_captcha"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Captcha" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/link_captcha_pic"
+                    android:layout_width="120dip"
+                    android:layout_height="50dip"
+                    android:background="@drawable/loading_pic"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Text captcha -->
+
+        <LinearLayout
+            android:id="@+id/text_captcha_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="?title_text_ref"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="6dip"
+                android:text="CAPTCHA"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                style="?horizontal_divider_ref"
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="6dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom" >
+
+                <EditText
+                    android:id="@+id/text_input_captcha"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Captcha" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/text_captcha_pic"
+                    android:layout_width="120dip"
+                    android:layout_height="50dip"
+                    android:background="@drawable/loading_pic"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

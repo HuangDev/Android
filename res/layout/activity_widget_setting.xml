@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color_ref"
+    android:orientation="vertical"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="6dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?title_text_ref"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="Choose subreddit"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            style="?horizontal_divider_ref"
+            android:layout_marginTop="6dip" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choose_subreddit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_imagebutton_state"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/subreddit_name"
+                style="?title_text_ref"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="2" 
+                />
+        </LinearLayout>
+
+        <TextView
+            style="?title_text_ref"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="Subreddit sort type"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            style="?horizontal_divider_ref"
+            android:layout_marginTop="6dip" >
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/group_subreddit_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/type_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="hot" />
+
+            <RadioButton
+                android:id="@+id/type_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="new" />
+
+            <RadioButton
+                android:id="@+id/type_controversial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="controversial" />
+
+            <RadioButton
+                android:id="@+id/type_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="top" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/group_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/group_title"
+                style="?title_text_ref"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="6dip"
+                android:text="Controversal  Sort type"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                style="?horizontal_divider_ref"
+                android:layout_marginTop="6dip" >
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/group_new_sort_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/new_sort_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="new" />
+
+                <RadioButton
+                    android:id="@+id/new_sort_rising"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rising" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_controversal_sort_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/controversal_sort_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this hour" />
+
+                <RadioButton
+                    android:id="@+id/controversal_sort_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="today" />
+
+                <RadioButton
+                    android:id="@+id/controversal_sort_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this week" />
+
+                <RadioButton
+                    android:id="@+id/controversal_sort_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this month" />
+
+                <RadioButton
+                    android:id="@+id/controversal_sort_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this year" />
+
+                <RadioButton
+                    android:id="@+id/controversal_sort_all_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="all time" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_top_sort_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/top_sort_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this hour" />
+
+                <RadioButton
+                    android:id="@+id/top_sort_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="today" />
+
+                <RadioButton
+                    android:id="@+id/top_sort_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this week" />
+
+                <RadioButton
+                    android:id="@+id/top_sort_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this month" />
+
+                <RadioButton
+                    android:id="@+id/top_sort_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this year" />
+
+                <RadioButton
+                    android:id="@+id/top_sort_all_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="all time" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

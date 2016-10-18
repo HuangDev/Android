@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- end of theme reddit -->
+
+    <style name="Theme.White" parent="Theme.Sherlock.Light.DarkActionBar.ForceOverflow">
+        <item name="subreddit_title_ref">@style/white_subreddit_title</item>
+    </style>
+
+</resources>

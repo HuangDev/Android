@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme blue -->
+    <!-- SubReddit title -->
+
+    <style name="reddit_subreddit_title" parent="common_subreddit_title">
+        <item name="android:textColor">#2946d2</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

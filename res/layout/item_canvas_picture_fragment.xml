@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color_ref"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/picture_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="3dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/title"
+            style="?subreddit_title_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/comment_info_nsfw"
+                    style="@style/nsfw" />
+
+                <TextView
+                    android:id="@+id/comment_info_date"
+                    style="?info_text_ref" />
+
+                <TextView
+                    android:id="@+id/comment_info_comments_count"
+                    style="?info_text_ref"
+                    android:layout_marginLeft="6dip" />
+
+                <TextView
+                    android:id="@+id/comment_info_subreddit"
+                    style="?label_text_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vote_score"
+                style="?score_text_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:text="+3"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="3dp" >
+
+            <Button
+                android:id="@+id/button_view_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="6dip"
+                android:background="@drawable/blue_tab_bg_state"
+                android:padding="2dip"
+                android:text="View Picture"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_browser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dip"
+                android:background="@drawable/blue_tab_bg_state"
+                android:padding="2dip"
+                android:text="Browser"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_tab_bg_state"
+                android:padding="2dip"
+                android:text="Comments"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <com.softgame.reddit.view.ScaleImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty_pic" />
+    </FrameLayout>
+
+</LinearLayout>

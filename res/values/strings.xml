@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, RedditActivity!</string>
+    <string name="app_name">Reddit ET Pro</string>
+    <string name="label_loading">Loading....</string>
+    <string name="label_no_more">There is no more</string>
+    <string name="label_no_item">There doesn\'t seem to be anything here</string>
+    <string name="label_tab_hot">hot</string>
+    <string name="label_tab_new">new</string>
+    <string name="label_tab_controersial">controversial</string>
+    <string name="label_tab_top">top</string>
+    <string name="label_tab_saved">saved</string>
+    <string name="label_save">Save</string>
+    <string name="label_unsave">Unsave</string>
+    <string name="label_hide">Hide</string>
+    <string name="label_unhide">Unhide</string>
+    <!-- SubReddit -->
+
+    <string name="days_ago">days ago</string>
+    <string name="year_ago">year ago</string>
+    <string name="years_ago">years ago</string>
+    <string name="pop_up_vote">+1</string>
+    <string name="pop_down_vote">-1</string>
+    <string name="pop_save">Save</string>
+    <string name="pop_hide">Hide</string>
+    <string name="pop_profile">Profile</string>
+    <string name="pref_key_selftext_collape">pref_key_selftext_collape</string>
+    <string name="pref_key_clear_cache">pref_key_clear_cache</string>
+    <string name="pref_key_clear_cache_rate">pref_key_clear_cache_rate</string>
+
+    <!-- Common -->
+    <string name="label_submit">submitted</string>
+    <string name="label_comments">comments</string>
+    <string name="error_title">Error!</string>
+    <string name="error_http_msg">There is a internet connect problem. Please try again latter!</string>
+    <string name="error_url_msg">the request url address is not correct!</string>
+    <string name="error_io_msg">There is a system error. Please try again latter!</string>
+    <string name="error_unknow_msg">Sorry there is an unknown error. Please try again latter!</string>
+    <!-- Login -->
+    <string name="login_progress_message">login,please wait!</string>
+    <string name="login_error">Error</string>
+    <string name="login_no_username">Username can not be empty!</string>
+    <string name="login_no_password">Password can not be empty!</string>
+    <string name="login_request">Login request!</string>
+
+    <!-- Redditor -->
+    <string name="label_redditor">Redditor</string>
+    <string name="lable_add_friend">+friends</string>
+    <string name="label_account_age">Account Age</string>
+    <string name="label_karma">Karma</string>
+    <string name="label_link_karma">Link Karma</string>
+    <string name="label_comment_karma">Comment Karma</string>
+    <string name="label_submitted">Submitted</string>
+    <string name="label_overview">Overview/Comments/Submitted</string>
+    <string name="label_liked_disliked">Liked/Disliked/Hidden</string>
+    <string name="label_send_message">Send a message</string>
+    <string name="label_email_box">My Mail Box</string>
+    <string name="label_link_describtion">You are submitting a link. The key to a successful submission is interesting content and a descriptive title.</string>
+    <string name="label_text_describtion">You are submitting a text-based post. Speak your mind. A title is required, but expanding further in the text field is not. Beginning your title with "vote up if" is violation of intergalactic law.</string>
+    <string name="date_prompt">links from</string>
+
+    <string-array name="date_array">
+        <item>this hour</item>
+        <item>today</item>
+        <item>this week</item>
+        <item>this month</item>
+        <item>this year</item>
+        <item>all time</item>
+    </string-array>
+    <string-array name="new_array">
+        <item>new</item>
+        <item>rising</item>
+    </string-array>
+    <string-array name="widget_new_array">
+        <item>new</item>
+        <item>rising</item>
+    </string-array>
+    <string-array name="widget_new_array_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="widget_date_array">
+        <item>this hour</item>
+        <item>today</item>
+        <item>this week</item>
+        <item>this month</item>
+        <item>this year</item>
+        <item>all time</item>
+    </string-array>
+    <string-array name="widget_date_array_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="key_widget_new_sort">key_widget_new_sort</string>
+    <string name="key_widget_controversal_sort">key_widget_controversal_sort</string>
+    <string name="key_widget_top_sort">key_widget_top_sort</string>
+    <string name="comments_sort_prompt">sorted by:</string>
+    <string name="comments_count_prompt">comments</string>
+
+    <string-array name="comments_sort_array">
+        <item>best</item>
+        <item>hot</item>
+        <item>new</item>
+        <item>controversial</item>
+        <item>top</item>
+        <item>old</item>
+    </string-array>
+    <string-array name="search_sort_array">
+        <item>relevance</item>
+        <item>new</item>
+        <item>top</item>
+    </string-array>
+    <string-array name="subreddit_type_array_text">
+        <item>HOT</item>
+        <item>NEW</item>
+        <item>CONTROVERSIAL</item>
+        <item>TOP</item>
+    </string-array>
+    <string-array name="widget_subreddit_type_array">
+        <item>HOT</item>
+        <item>NEW</item>
+        <item>CONTROVERSIAL</item>
+        <item>TOP</item>
+    </string-array>
+    <string-array name="widget_subreddit_type_array_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="key_widget_subreddit">key_widget_subreddit</string>
+
+    <!-- Comment -->
+    <string name="comment_pop_post">Post a comment</string>
+    <string name="comment_pop_save">Save</string>
+    <string name="comment_pop_unsave">Unsave</string>
+    <string name="comment_pop_hide">Hide</string>
+    <string name="comment_pop_unhide">Unhide</string>
+    <string name="comment_pop_profile">Profile</string>
+    <string name="comment_pop_post_append">\'s post</string>
+    <string name="comment_pop_comment_append">\'s comment</string>
+    <string name="comment_pop_vote_up">+1</string>
+    <string name="comment_pop_vote_down">-1</string>
+    <string name="comment_pop_login">Login</string>
+
+    <!-- overview -->
+    <string name="label_overview_bar_title">\'s overview</string>
+
+    <string-array name="overview_tab_text_array">
+        <item>Profile</item>
+        <item>Overview</item>
+        <item>Comments</item>
+        <item>Submitted</item>
+    </string-array>
+    <string-array name="overview_sort_array">
+        <item>new</item>
+        <item>hot</item>
+        <item>top</item>
+        <item>controversial</item>
+    </string-array>
+    <string-array name="liked_tab_text_array">
+        <item>liked</item>
+        <item>disliked</item>
+        <item>hidden</item>
+        <item>saved</item>
+    </string-array>
+
+    <!-- dialog me -->
+    <string name="dialog_me_profile">Profile</string>
+    <string name="dialog_me_overview">Overview/Comments/Submitted</string>
+    <string name="dialog_me_liked">Liked/Disliked/Hidden</string>
+    <string name="dialog_me_message">Message</string>
+    <string name="dialog_me_submit">Submit a link</string>
+    <string name="dialog_me_logout">Log out</string>
+
+    <!-- Toast -->
+    <!-- add friend successfully -->
+    <string name="toast_add_friend">friend add!</string>
+
+    <!-- Message -->
+
+    <string-array name="label_email_text_array">
+        <item>inbox</item>
+        <item>messages</item>
+        <item>replies</item>
+        <item>all</item>
+        <item>sent</item>
+        <item>messages</item>
+        <item>moderator mail</item>
+        <item>all</item>
+    </string-array>
+    <string-array name="label_message_text_array">
+        <item>MESSAGES</item>
+        <item>ALL</item>
+        <item>COMMENT REPLIES</item>
+        <item>POST REPLIES</item>
+        <item>SENT</item>
+        <item>ALL(MOD)</item>
+        <item>UNREAD(MOD)</item>
+    </string-array>
+    <string-array name="comment_count_text_array">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+    </string-array>
+
+    <!-- Grid -->
+
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+
+    <!-- Preference -->
+
+    <string name="pref_theme_key">pref_theme_key</string>
+    <string name="pref_confirm_exit_key">pref_confirm_exit</string>
+    <string name="pref_load_picture_key">pref_load_picture</string>
+    <string name="pref_load_webpage_key">pref_load_webpage</string>
+    <string name="pref_safe_for_work">pref_safe_for_work</string>
+    <string name="pref_share_app_key">pref_share_app</string>
+    <string name="pref_contact_developer_key">pref_contact_developer</string>
+    <string name="pref_report_bug_key">pref_report_bug</string>
+    <string name="pref_check_message_key">pref_check_message</string>
+    <string name="pref_notification_vibrate_key">pref_message_vibrate</string>
+    <string name="pref_notification_ringtone_key">pref_message_ringstone</string>
+    <string name="pref_check_rate_key">pref_check_rate</string>
+    <string name="key_widget_subreddit_type">key_widget_subreddit_type</string>
+    <string name="check_rate_dialog_title">Check rate</string>
+    <string name="pref_key_picture_save_path">key_picture_save_path</string>
+    <string name="pref_key_comment_count">key_comment_count</string>
+    <string name="pref_key_embed_view">key_embed_view</string>
+    <string name="pref_key_show_text_viewing_picture">key_show_text_viewing_picture</string>
+    <string name="pref_key_picture_quality_level">key_picture_quality_level</string>
+    <string name="pref_key_subscribe_redditet">pref_key_subscribe_redditet</string>
+    <string name="pref_key_go_to_redditet">pref_key_go_to_redditet</string>
+    <string name="pref_key_rate_redditet">pref_key_rate_reddiet</string>
+
+    <string-array name="check_rate_array">
+        <item>Every 5 minutes</item>
+        <item>Every 15 minutes</item>
+        <item>Every 30 minutes</item>
+        <item>Every 1 hour</item>
+        <item>Every half day</item>
+        <item>Every day</item>
+    </string-array>
+    <string-array name="clear_disk_rate_array">
+        <item>Never (save power)</item>
+        <item>Every 2 hours</item>
+        <item>Every 6 hours</item>
+        <item>Every 12 hours</item>
+        <item>Every 24 hours</item>
+        <item>Every 30 hours</item>
+        <item>Every 36 hours</item>
+        <item>Every 42 hours</item>
+        <item>Every 48 hours</item>
+    </string-array>
+    <string-array name="picture_quality_text_array">
+        <item>Excellent</item>
+        <item>Good</item>
+        <item>Average</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="picture_quality_value_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="check_rate_array_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="theme_array">
+        <item>Reddit</item>
+        <item>Dark Night</item>
+    </string-array>
+    <string-array name="theme_value_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

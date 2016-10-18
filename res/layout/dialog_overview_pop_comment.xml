@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout style="@style/blue_dialog_linear" >
+
+        <LinearLayout
+            android:id="@+id/overview_all_comment"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                style="@style/blue_dialog_item_icon"
+                android:src="@drawable/icon_comment_unselected" />
+
+            <TextView
+                style="@style/blue_dialog_text_center"
+                android:text="full comments" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_post_comment_divider"
+            style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/comment_vote_up"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                android:id="@+id/comment_vote_up_icon"
+                style="@style/blue_dialog_item_icon" />
+
+            <TextView
+                style="@style/blue_dialog_text_center"
+                android:text="@string/comment_pop_vote_up" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_vote_up_divider"
+            style="@style/blue_dialog_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/comment_vote_down"
+            style="@style/blue_dialog_item_wraper" >
+
+            <ImageView
+                android:id="@+id/comment_vote_down_icon"
+                style="@style/blue_dialog_item_icon" />
+
+            <TextView
+                style="@style/blue_dialog_text_center"
+                android:text="@string/comment_pop_vote_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

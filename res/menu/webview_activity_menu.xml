@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 Google Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_item_post_comment"
+        android:icon="@drawable/icon_comment_state"
+        android:showAsAction="ifRoom"
+        android:title="comments"/>
+    <item
+        android:id="@+id/menu_item_profile"
+        android:icon="@drawable/icon_reddit_profile"
+        android:showAsAction="ifRoom"
+        android:title="profile"/>
+ 
+    <item
+        android:id="@+id/menu_item_save"
+        android:icon="@drawable/icon_actionbar_save"
+        android:showAsAction="ifRoom"
+        android:title="save"/>
+    
+    
+    
+    <item
+        android:id="@+id/menu_item_hide"
+        android:icon="@drawable/icon_hide"
+        android:showAsAction="never"
+        android:title="hide"/>
+    
+    
+       <item
+        android:id="@+id/menu_item_up_vote"
+        android:icon="@drawable/vote_up_grey"
+        android:showAsAction="never"
+        android:title="up vote"/>
+    <item
+        android:id="@+id/menu_item_down_vote"
+        android:icon="@drawable/vote_down_grey"
+        android:showAsAction="never"
+        android:title="down vote"/>
+    
+
+    <!-- XXX: For now, ShareActionProviders must be displayed on the action bar -->
+    <!--
+        item android:id="@+id/menu_item_share_action_provider_overflow"
+        android:showAsAction="never"
+        android:title="@string/action_bar_share_with"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider" /
+    -->
+
+</menu>

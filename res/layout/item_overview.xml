@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ignition="http://github.com/ignition/schema"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/post_title"
+        style="?subreddit_title_ref"
+        android:padding="6dip" />
+
+    <!-- vote -->
+
+    <LinearLayout style="@style/subreddit_item" >
+
+        <LinearLayout style="@style/vote_wraper" >
+
+            <LinearLayout
+                android:id="@+id/vote_up_wraper"
+                style="@style/vote_up_wraper" >
+
+                <ImageView
+                    android:id="@+id/vote_up_image"
+                    style="@style/vote_image"
+                    android:src="?vote_up_grey_ref" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vote_score"
+                style="?score_text_ref" />
+
+            <LinearLayout
+                android:id="@+id/vote_down_wraper"
+                style="@style/vote_down_wraper" >
+
+                <ImageView
+                    android:id="@+id/vote_down_image"
+                    style="@style/vote_image"
+                    android:src="?vote_down_grey_ref" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- comment -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/subreddit_item_minheight"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!-- author -->
+
+                <TextView
+                    android:id="@+id/comment_author"
+                    style="?comment_author_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="6dip"
+                    android:textStyle="bold" />
+
+                <!-- date -->
+
+                <TextView
+                    android:id="@+id/comment_date"
+                    style="?info_text_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="6dip" />
+
+                <TextView
+                    android:id="@+id/post_subreddit"
+                    style="?label_text_ref" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/comment_body"
+                style="?comment_body_ref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:gravity="center"
+                android:minHeight="48dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

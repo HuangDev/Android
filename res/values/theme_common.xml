@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme common is to used as a parent of Theme children, such as theme_blue theme_black theme_white theme_day -->
+
+    <style name="common_subreddit_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dip</item>
+        <item name="android:layout_marginBottom">2dip</item>
+    </style>
+
+    <style name="common_listview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+    </style>
+    
+    <style name="common_comment_pic">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+    
+    
+    
+    
+
+</resources>

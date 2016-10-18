@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="INTERFACE" >
+
+        <!-- Choose the Theme -->
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="Choose theme"
+            android:entries="@array/theme_array"
+            android:entryValues="@array/theme_value_array"
+            android:key="@string/pref_theme_key"
+            android:title="Choose theme" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="APP SETTINGS" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_confirm_exit_key"
+            android:title="Confirm exit" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_safe_for_work"
+            android:summary="show NSFW content"
+            android:title="Make safe(r) for work" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Picture quality level"
+            android:entries="@array/picture_quality_text_array"
+            android:entryValues="@array/picture_quality_value_array"
+            android:key="@string/pref_key_picture_quality_level"
+            android:summary="select lower quality level if pictures have showing issue"
+            android:title="Picture quality level" />
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="Comments"
+            android:entries="@array/comment_count_text_array"
+            android:entryValues="@array/comment_count_value_array"
+            android:key="@string/pref_key_comment_count"
+            android:title="Comment load count" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_show_text_viewing_picture"
+            android:title="Show text bar on picture view" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_selftext_collape"
+            android:title="Selftext collape" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_embed_view"
+            android:summary="Honeycomb+ version requested"
+            android:title="Embed view for Youtube" />
+
+        <Preference
+            android:key="@string/pref_key_clear_cache"
+            android:title="Clear disk cache" >
+        </Preference>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="Clear Disk Cache"
+            android:entries="@array/clear_disk_rate_array"
+            android:entryValues="@array/clear_disk_rate_value_array"
+            android:key="@string/pref_key_clear_cache_rate"
+            android:title="Clear cache rate" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="REDDIT MESENGER" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_check_message_key"
+            android:title="Check Reddit messages" />
+
+        <!-- The visual style of a child is defined by this styled theme attribute. -->
+        <ListPreference
+            android:defaultValue="2"
+            android:dependency="@string/pref_check_message_key"
+            android:dialogTitle="@string/check_rate_dialog_title"
+            android:entries="@array/check_rate_array"
+            android:entryValues="@array/check_rate_array_value"
+            android:key="@string/pref_check_rate_key"
+            android:title="Check rate" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:dependency="@string/pref_check_message_key"
+        android:title="MESSENGER NOTIFICATIONS" >
+        <CheckBoxPreference
+            android:dependency="@string/pref_check_message_key"
+            android:key="@string/pref_notification_vibrate_key"
+            android:summary="vibrate when messages are received"
+            android:title="Vibrate" />
+
+        <RingtonePreference
+            android:dependency="@string/pref_check_message_key"
+            android:key="@string/pref_notification_ringtone_key"
+            android:summary="Set a ringtone for new messages"
+            android:title="Notification Ringtone" 
+            android:ringtoneType="notification"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="GENERAL" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_subscribe_redditet"
+            android:title="Subscribe to /r/RedditET" />
+
+        <Preference
+            android:key="@string/pref_key_rate_redditet"
+            android:title="Check update or rate Reddit ET" />
+        <Preference
+            android:key="@string/pref_contact_developer_key"
+            android:summary="redditor: redditet"
+            android:title="Send a message to the developer" >
+        </Preference>
+        <Preference
+            android:key="@string/pref_report_bug_key"
+            android:summary="report a bug, suggestion, anything you like to share"
+            android:title="Post to /r/RedditET" >
+        </Preference>
+        <Preference
+            android:key="@string/pref_key_go_to_redditet"
+            android:title="Go to /r/RedditET" />
+        <Preference
+            android:key="@string/pref_share_app_key"
+            android:title="Share the Reddit ET App" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

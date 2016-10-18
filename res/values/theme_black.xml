@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ListView -->
+
+    <style name="black_subreddit_post_bg" parent="subreddit_item">
+        <item name="android:background">@drawable/black_image_shadow</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:minHeight">68dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="black_subreddit_list" parent="common_listview">
+        <item name="android:divider">@null</item>
+        <item name="android:cacheColorHint">#1a1a1a</item>
+        <item name="android:background">#1a1a1a</item>
+    </style>
+
+    <style name="black_subreddit_title" parent="common_subreddit_title">
+        <item name="android:textColor">#dfdfdf</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="black_score_text" parent="common_score_text">
+        <item name="android:textColor">#f0f0f0</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="black_info_text" parent="common_info_text">
+        <item name="android:textColor">#0099CC</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="black_info_color_text" parent="common_info_text">
+        <item name="android:textColor">#9400e0</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="black_comment_pic" parent="common_comment_pic">
+        <item name="android:src">@drawable/black_icon_comment_state</item>
+    </style>
+
+    <style name="black_comment_text" parent="common_comment_text">
+        <item name="android:textColor">#00b4ff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="black_selfpost_body" parent="common_selfpost_body">
+        <item name="android:textColor">#ebebeb</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/black_bg_selftext</item>
+        <item name="android:textColorLink">#0092b6</item>
+    </style>
+
+    <!-- save hide -->
+    <style name="black_label_text" parent="common_label_text">
+        <item name="android:textColor">#00b4ff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/black_bg_selftext</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="black_spinner_promote" parent="common_spinner_promote">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#00a6eb</item>
+    </style>
+
+    <style name="black_spinner" parent="common_spinner">
+        <item name="android:background">@drawable/spinner_background_holo_dark</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="black_spinner_text_item" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#00b4ff</item>
+    </style>
+
+    <style name="black_spinner_dropdown" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:textColor">#0099CC</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:checkMark">@drawable/btn_radio_holo_light</item>
+    </style>
+
+    <color name="black_blackground_color">#1d1d1d</color>
+
+    <drawable name="black_blackground_drawable">#1d1d1d</drawable>
+
+    <style name="black_comment_author" parent="common_comment_author">
+        <item name="android:textColor">#006da0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="black_comment_body" parent="common_comment_body">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#d7d7d7</item>
+        <item name="android:textColorLink">#0092b6</item>
+    </style>
+
+    <style name="black_karma_number" parent="common_karma_number">
+        <item name="android:textColor">#f5f5f5</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="black_karma_text" parent="common_karam_text">
+        <item name="android:textColor">#0094d1</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="black_button" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/black_bg_button_state</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="black_title_text" parent="common_title_text">
+        <item name="android:textColor">#0094d1</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="black_horizontal_divider" parent="common_horizontal_divider">
+        <item name="android:background">#222222</item>
+    </style>
+
+    <style name="black_message_author">
+        <item name="android:textColor">#0086b8</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="black_message_body">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="black_message_date">
+        <item name="android:textColor">#00a0e2</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="black_message_subject">
+        <item name="android:textColor">#a90050</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="black_message_arrow">
+        <item name="android:src">@drawable/icon_arrow_right</item>
+    </style>
+
+    <!-- image info -->
+    <style name="black_image_info_title" parent="common_image_info_title">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="black_image_info_text" parent="common_image_info_text">
+        <item name="android:textColor">#009ee7</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="black_image_info_label" parent="common_image_info_label">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#009ee7</item>
+        <item name="android:background">@drawable/blue_image_info_bg_subreddit_text</item>
+    </style>
+
+    <style name="black_image_info_score" parent="common_image_info_score">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="black_image_info_icon_gallery">
+        <item name="android:src">@drawable/icon_actionbar_gallery</item>
+    </style>
+
+    <style name="black_image_info_icon_comment">
+        <item name="android:src">@drawable/icon_actionbar_comment</item>
+    </style>
+
+    <style name="black_image_info_icon_browser">
+        <item name="android:src">@drawable/icon_actionbar_browser</item>
+    </style>
+
+    <!-- link -->
+    <style name="black_link_bg_ref">
+        <item name="android:background">@drawable/black_bg_flat_button_state</item>
+    </style>
+
+    <style name="black_link_arrow_ref">
+        <item name="android:src">@drawable/icon_navigation_right</item>
+    </style>
+
+    <style name="black_bg_show_all_comments">
+        <item name="android:background">@drawable/black_bg_show_all_comment_state</item>
+    </style>
+
+    <style name="black_bg_context_comment" parent="black_comment_body">
+        <item name="android:background">#293134</item>
+    </style>
+
+    <!-- Most clost to the reddit -->
+    <style name="Theme.Balck" parent="Theme.Sherlock.ForceOverflow">
+
+        <!-- own custom -->
+        <item name="subreddit_post_bg_ref">@style/black_subreddit_post_bg</item>
+        <item name="background_color_ref">@color/black_blackground_color</item>
+        <item name="subreddit_title_ref">@style/black_subreddit_title</item>
+        <item name="subreddit_listview_ref">@style/black_subreddit_list</item>
+        <item name="vote_up_grey_ref">@drawable/black_vote_up_grey</item>
+        <item name="vote_down_grey_ref">@drawable/black_vote_down_grey</item>
+        <item name="score_text_ref">@style/black_score_text</item>
+        <item name="info_text_ref">@style/black_info_text</item>
+        <item name="info_color_text_ref">@style/black_info_color_text</item>
+        <!-- number of comment -->
+        <item name="comment_text_ref">@style/black_comment_text</item>
+        <item name="comment_pic_ref">@style/black_comment_pic</item>
+        <item name="selfpost_body_ref">@style/black_selfpost_body</item>
+        <item name="label_text_ref">@style/black_label_text</item>
+        <item name="spinner_promote_ref">@style/black_spinner_promote</item>
+        <item name="spinner_ref">@style/black_spinner</item>
+        <item name="spinner_dropdown_ref">@style/black_spinner_dropdown</item>
+        <item name="spinner_text_item_ref">@style/black_spinner_text_item</item>
+        <item name="comment_author_ref">@style/black_comment_author</item>
+        <item name="comment_body_ref">@style/black_comment_body</item>
+        <item name="karma_number_ref">@style/black_karma_number</item>
+        <item name="karma_text_ref">@style/black_karma_text</item>
+        <item name="title_text_ref">@style/black_title_text</item>
+        <item name="horizontal_divider_ref">@style/black_horizontal_divider</item> <!-- image view -->
+        <item name="image_info_background_ref">@color/black_bg_image_info</item>
+        <item name="image_info_title_ref">@style/black_image_info_title</item>
+        <item name="image_info_text_ref">@style/black_image_info_text</item>
+        <item name="image_info_label_ref">@style/black_image_info_label</item>
+        <item name="image_info_score_ref">@style/black_image_info_score</item>
+        <item name="image_info_icon_gallery_ref">@style/black_image_info_icon_gallery</item>
+        <item name="image_info_icon_browser_ref">@style/black_image_info_icon_browser</item>
+        <item name="image_info_icon_comment_ref">@style/black_image_info_icon_comment</item> <!-- link -->
+        <item name="link_bg_ref">@style/black_link_bg_ref</item>
+        <item name="link_arrow_ref">@style/black_link_arrow_ref</item>
+        <item name="bg_show_all_comments_ref">@style/black_bg_show_all_comments</item>
+        <item name="bg_context_comment_ref">@style/black_bg_context_comment</item>
+
+        <!-- message -->
+        <item name="message_author_ref">@style/black_message_author</item>
+        <item name="message_body_ref">@style/black_message_body</item>
+        <item name="message_date_ref">@style/black_message_date</item>
+        <item name="message_subject_ref">@style/black_message_subject</item>
+        <item name="message_arrow_ref">@style/black_message_arrow</item>
+
+        <!-- actionbar tab and android actionbar tab -->
+        <item name="tab_spinner_text_ref">@style/blue_tab_spinner_text_item</item>
+        <item name="actionDropDownStyle">@style/black_action_bar_spinner</item>
+        <item name="actionBarItemBackground">@drawable/blue_bg_actionbar_item_state</item>
+        <item name="actionBarStyle">@style/black_action_bar</item>
+        <item name="actionBarSize">@dimen/action_bar_height</item>
+        <item name="actionBarTabStyle">@style/black_tab_view</item>
+        <item name="actionBarTabTextStyle">@style/black_tab_text</item>
+        <item name="actionBarTabBarStyle">@style/black_tab_bar</item>
+        <item name="spinnerDropDownItemStyle">@style/blue_tab_spinner_dropdownitem</item>
+        <item name="spinnerItemStyle">@style/blue_tab_spinner_text_item</item>
+        <item name="android:actionDropDownStyle">@style/black_action_bar_spinner</item>
+        <item name="android:actionBarStyle">@style/black_action_bar</item>
+        <item name="android:actionBarSize">@dimen/action_bar_height</item>
+        <item name="android:actionBarTabStyle">@style/black_tab_view</item>
+        <item name="android:actionBarTabTextStyle">@style/black_tab_text</item>
+        <item name="android:actionBarTabBarStyle">@style/black_tab_bar</item>
+        <item name="android:spinnerDropDownItemStyle">@style/blue_tab_spinner_dropdownitem</item>
+        <item name="android:spinnerItemStyle">@style/blue_tab_spinner_text_item</item>
+        <item name="android:editTextStyle">@style/edittext_dark</item>
+        <item name="android:radioButtonStyle">@style/RadioHoloDark</item>
+        <item name="android:buttonStyle">@style/black_button</item>
+        <item name="android:windowBackground">@drawable/black_blackground_drawable</item>
+    </style>
+
+    <style name="black_action_bar_spinner" parent="Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/black_tab_spinner_state</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:maxWidth">120dp</item>
+    </style>
+
+    <style name="black_action_bar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/black_actionbar_text</item>
+        <item name="android:titleTextStyle">@style/black_actionbar_text</item>
+        <item name="subtitleTextStyle">@style/black_actionbar_text</item>
+        <item name="android:subtitleTextStyle">@style/black_actionbar_text</item>
+        <item name="background">#000000</item>
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="black_actionbar_text" parent="TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#00abea</item>
+        <item name="android:textScaleX">0.92</item>
+    </style>
+
+    <style name="black_tab_bar" parent="Widget.Sherlock.ActionBar.TabBar">
+        <item name="android:divider">@null</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">0dip</item>
+        <item name="android:background">#222222</item>
+        <item name="background">#222222</item>
+    </style>
+
+    <style name="black_tab_view" parent="Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/blue_tab_bg_state</item>
+        <item name="android:gravity">center_vertical|center_horizontal|center</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:fadingEdge">@null</item>
+        <item name="android:fadingEdgeLength">0dip</item>
+    </style>
+
+    <style name="black_tab_text" parent="Widget.Sherlock.ActionBar.TabText">
+        <item name="android:textAppearance">@null</item>
+        <item name="android:textColor">@color/black_tab_text_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+</resources>

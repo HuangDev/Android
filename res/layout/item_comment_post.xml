@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ignition="http://github.com/ignition/schema"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/subreddit_item_minheight" >
+
+        <!-- vote -->
+
+        <LinearLayout style="@style/vote_wraper" >
+
+            <LinearLayout
+                android:id="@+id/vote_up_wraper"
+                style="@style/vote_up_wraper" >
+
+                <ImageView
+                    android:id="@+id/vote_up_image"
+                    style="@style/vote_image"
+                    android:src="?vote_up_grey_ref" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vote_score"
+                style="?score_text_ref" />
+
+            <LinearLayout
+                android:id="@+id/vote_down_wraper"
+                style="@style/vote_down_wraper" >
+
+                <ImageView
+                    android:id="@+id/vote_down_image"
+                    style="@style/vote_image"
+                    android:src="?vote_down_grey_ref" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Title -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:minHeight="60dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/post_title"
+                style="?subreddit_title_ref" />
+
+            <!-- info -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingBottom="1dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dip" >
+
+                    <TextView
+                        android:id="@+id/comment_info_date"
+                        style="?info_text_ref" />
+
+                    <TextView
+                        android:id="@+id/comment_info_author"
+                        style="?info_text_ref"
+                        android:paddingLeft="3dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:id="@+id/comment_info_nsfw"
+                        style="@style/nsfw" />
+
+                    <TextView
+                        android:id="@+id/comment_info_comments_count"
+                        style="?info_text_ref" />
+
+                    <TextView
+                        android:id="@+id/comment_info_subreddit"
+                        style="?label_text_ref"
+                        android:layout_marginLeft="3dip" />
+
+                    <TextView
+                        android:id="@+id/comment_info_hide"
+                        style="?label_text_ref"
+                        android:layout_marginLeft="3dip" />
+
+                    <TextView
+                        android:id="@+id/comment_info_saved"
+                        style="?label_text_ref"
+                        android:layout_marginLeft="3dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Image from original -->
+
+    <LinearLayout
+        android:id="@+id/subreddit_image_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_image_shadow"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/subreddit_image"
+                style="@style/image_big" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Link with thumib -->
+
+    <LinearLayout
+        android:id="@+id/subreddit_link_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="3dp" >
+
+        <ImageView
+            android:id="@+id/subreddit_thumb"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:background="@drawable/thumbnail_shadow"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/subreddit_link"
+            style="?link_bg_ref"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/subreddit_link_text"
+                style="?info_text_ref"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:text="view on web"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+
+            <ImageView
+                style="?link_arrow_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subreddit_content_text"
+        style="?selfpost_body_ref" 
+        android:clickable="true"
+        />
+
+</LinearLayout>

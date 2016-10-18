@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background_color_ref" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="3dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/title"
+            style="?subreddit_title_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/comment_info_nsfw"
+                    style="@style/nsfw" />
+
+                <TextView
+                    android:id="@+id/comment_info_date"
+                    style="?info_text_ref" />
+
+                <TextView
+                    android:id="@+id/comment_info_comments_count"
+                    style="?info_text_ref"
+                    android:layout_marginLeft="6dip" />
+
+                <TextView
+                    android:id="@+id/comment_info_subreddit"
+                    style="?label_text_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vote_score"
+                style="?score_text_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="12dp"
+                android:text="+3"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_tab_bg_state"
+                android:padding="2dip"
+                android:text="Comments"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout style="?horizontal_divider_ref" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/body"
+            style="?selfpost_body_ref"
+            android:background="@null"
+            android:lineSpacingExtra="2dp"
+            android:padding="0dp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+</ScrollView>

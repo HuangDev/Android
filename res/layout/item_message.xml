@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="12dip"
+    android:paddingRight="6dip" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <!-- User and Date -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/message_author"
+                style="?message_author_ref"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/comment_date"
+                style="?message_date_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dip"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_subject"
+            style="?message_subject_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textScaleX="0.92" 
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/message_body"
+            style="?comment_body_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:autoLink="none"
+            />
+    </LinearLayout>
+
+    <!--  -->
+
+    <ImageView
+        style="?message_arrow_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

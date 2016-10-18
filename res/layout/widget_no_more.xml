@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_widget_white"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <!-- Title show the icon and subreddit -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="2dip" >
+
+                <TextView
+                    android:id="@+id/widget_subreddit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#1abcff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/widget_subreddit_kind"
+                    style="@style/blue_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/widget_refresh"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_refresh" />
+
+            <ImageView
+                android:id="@+id/widget_setting"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_setting_state" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#00b4ff" >
+        </LinearLayout>
+
+        <!-- Vote and title and comments -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/blue_subreddit_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:gravity="center"
+                android:text="@string/label_no_more" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

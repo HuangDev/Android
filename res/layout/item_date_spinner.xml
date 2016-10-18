@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="2dip" >
+
+    <TextView
+        style="?spinner_promote_ref"
+        android:text="@string/date_prompt" />
+
+    <Spinner
+        android:id="@+id/date_spinner"
+        style="?spinner_ref"
+        android:prompt="@string/date_prompt" />
+
+</LinearLayout>
